@@ -217,7 +217,7 @@ namespace Lachee.Discord
                         }
                     }
 #else
-                using (WWW www = new WWW(GetAvatarURL(DiscordUser.AvatarFormat, size)))
+                using (WWW www = new WWW(GetAvatarURL(User.AvatarFormat, size)))
                 {
                     //Download the texture
                     yield return www;
